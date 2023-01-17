@@ -36,9 +36,11 @@
 
 /* ROOT */
 :root {
-    /* --header-bg-color: #fff; */
-    /* --main-bg-color: #fff; */
-    /* --main-text-color: #fff; */
+    --header-bg-color: #FEFCF7;
+    --main-bg-color: #FEFCF7;
+    --main-text-color: #333D4B;
+    --why-section-bg-color: #2C343E;
+    --main-btn-color: #0E8784;
 }
 
 html {
@@ -58,8 +60,8 @@ body {
     flex-direction: column;
     height: 100%;
     margin: 0;
-    font-family: "Arial", sans-serif;
-    font-weight: 400;
+    font-family: "Fraunces", 'Times New Roman', Times, serif;
+    font-weight: 900;
     background-color: #fff;
 }
 
@@ -83,7 +85,7 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1320px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 20px;
@@ -106,7 +108,7 @@ a {
 .site-header {
     padding-top: 43px;
     padding-bottom: 43px;
-    background-color: var(--header-bg-color);
+    background-color: #fff;
 }
 
 .site-header__wrapper {
@@ -212,3 +214,101 @@ a {
 /******************* HEADER MOBILE STYLES END ******************/
 
 /****************** HEADER STYLES END *****************/
+
+/****************** MAIN STYLES START *****************/
+/* HERO SECTION START */
+.hero-section {
+    padding-top: 8px;
+    padding-bottom: 60px;
+}
+
+.hero-section__wrapper {
+    width: 100%;
+    padding: 101px 24px 136px 24px;
+    background: url('../images/hero-img.jpg'), rgba(0, 0, 0, 0.513886);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #A2A2A2;
+    border-radius: 10px;
+}
+
+.hero-section__start {
+    text-align: center;
+}
+
+.hero-section__title {
+    margin: 0;
+    margin-bottom: 22px;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--header-bg-color);
+}
+
+.hero-section__desc {
+    margin: 0;
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--header-bg-color);
+    opacity: 0.8;
+}
+
+/* HERO SECTION END */
+
+/* TABLET RESPONSIVE START */
+@media only screen and (min-width: 768px) {
+    .hero-section {
+        padding-top: 13px;
+        padding-bottom: 72px;
+    }
+
+    .hero-section__wrapper {
+        padding: 126px 58px;
+        background-image: url('../images/hero-full-img.jpg');
+        background-position: left center;
+    }
+
+    .hero-section__start {
+        width: 398px;
+        text-align: left;
+    }
+}
+
+/* TABLET RESPONSIVE END */
+
+/* DESKTOP RESPONSIVE START */
+@media only screen and (min-width: 1024px) {
+    .hero-section {
+        padding-top: 0;
+        padding-bottom: 84px;
+    }
+
+    .hero-section__wrapper {
+        padding: 134px 85px;
+        background-image: url('../images/hero-desktop-img.jpg');
+        background-position: left center;
+        background-size: cover;
+    }
+
+    .hero-section__start {
+        width: 485px;
+        text-align: left;
+    }
+
+    .hero-section__title {
+        font-size: 72px;
+        line-height: 72px;
+        margin-bottom: 32px;
+    }
+
+    .hero-section__desc {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+/* DESKTOP RESPONSIVE END */
+
+/****************** MAIN STYLES END *****************/
